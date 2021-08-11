@@ -26,10 +26,21 @@ img {
   object-fit: cover;
 }
 
+.no-Select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Typography */
 
 body {
   font-family: var(--Barlow);
+  line-height: 1.6;
 }
 
 a {
@@ -64,12 +75,12 @@ h3 {
 
 .list-menubar:hover {
   color: #000;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-family: var(--Fraunces);
   background-color: var(--Yellow);
   border-radius: 40px;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 .btn-more {
@@ -78,6 +89,23 @@ h3 {
   text-transform: uppercase;
   font-weight: 900;
 }
+
+.title_background_image {
+  font-family: var(--Fraunces);
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+
+.color-background-image-graphic {
+  color: var(--Dark-desaturated-cyan);
+}
+
+.color-background-image-photography {
+  color: var(--Dark-blue);
+}
+
 /* ======= Layout ====== */
 
 .container-grid {
@@ -112,12 +140,16 @@ h3 {
   cursor: pointer;
 }
 
-.list-menubar {
-  margin: 1.2em 0;
+.list-enlace {
+  margin: 1em 0;
+}
+
+.menu-bar-hide {
+  display: none;
 }
 
 .menu-bar {
-  display: none;
+  display: flex;
   padding: 1em;
   position: absolute;
   top: 6em;
@@ -147,17 +179,20 @@ h3 {
 /* ==== Main === */
 
 .img-transform,
-.transform {
+.transform,
+.standout,
+.graphic,
+.photography {
   grid-column: 1 / -1;
 }
 
 .text__style {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2em 1.3em;
+  padding: 3em 1.6em;
 }
 
 .text__style__p {
@@ -172,9 +207,55 @@ h3 {
 .btn-more::before {
   content: "";
   position: absolute;
-  bottom: -1px;
-  background-color: #f3e77c;
+  bottom: 2px;
   height: 7px;
   width: 120px;
   z-index: -1;
+}
+
+.btn-transform::before {
+  background-color: #f3e77c;
+}
+.btn-standout::before {
+  background-color: var(--Soft-red);
+}
+
+.graphic {
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+}
+
+.photography {
+  background-image: url(/images/mobile/image-photography.jpg);
+}
+
+.text-background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  font-weight: 600;
+  color: var(--Dark-desaturated-cyan);
+}
+
+.container_text_background_image {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* Client Testimonial Section */
+
+.client-testimonials {
+  padding: 3em 2em;
+}
+
+.client-testimonials_title {
+  font-family: var(--Fraunces);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--Grayish-blue);
+  text-align: center;
+  letter-spacing: 3px;
 }
