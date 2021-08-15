@@ -106,6 +106,15 @@ h3 {
   color: var(--Dark-blue);
 }
 
+.client-testimonials_title {
+  font-family: var(--Fraunces);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--Grayish-blue);
+  text-align: center;
+  letter-spacing: 3px;
+}
+
 /* ======= Layout ====== */
 
 .container-grid {
@@ -231,18 +240,19 @@ h3 {
 .text-background-image {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 1em;
   font-weight: 600;
   color: var(--Dark-desaturated-cyan);
 }
 
 .container_text_background_image {
-  height: 85vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 /* Client Testimonial Section */
@@ -251,11 +261,33 @@ h3 {
   padding: 3em 2em;
 }
 
-.client-testimonials_title {
-  font-family: var(--Fraunces);
-  text-transform: uppercase;
-  font-weight: 900;
-  color: var(--Grayish-blue);
+.testimonial {
   text-align: center;
-  letter-spacing: 3px;
+  margin: 3em 0;
+}
+
+.testimonial-img {
+  display: inline-block;
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+
+.testimonial_text {
+  font-weight: 600;
+  color: var(--Very-dark-grayish-blue);
+  padding: 1em 0 2em;
+}
+
+.first_name {
+  font-family: var(--Fraunces);
+  font-weight: 900;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.occupation {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--Grayish-blue) 
 }
