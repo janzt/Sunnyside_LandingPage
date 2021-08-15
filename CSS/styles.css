@@ -221,11 +221,11 @@ h3 {
 }
 
 .graphic {
-  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-image: url(../images/mobile/image-graphic-design.jpg);
 }
 
 .photography {
-  background-image: url(/images/mobile/image-photography.jpg);
+  background-image: url(../images/mobile/image-photography.jpg);
 }
 
 .text-background-image {
