@@ -122,11 +122,7 @@ h3 {
   grid-template-columns: 1.5em minmax(300px, 1fr) 1.5em;
 }
 
-.header__container {
-  grid-column: 2;
-}
-
-.header-background {
+.container-header {
   background-image: url(../images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,7 +167,7 @@ h3 {
 
 .triangle {
   position: absolute;
-  top: -1.7em;
+  top: -1.6em;
   right: 0;
   background-color: var(--White);
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -182,16 +178,20 @@ h3 {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 2em 0;
+  padding: 2em 1.5em;
 }
 
 /* ==== Main === */
 
+.container-header,
 .img-transform,
 .transform,
 .standout,
 .graphic,
-.photography {
+.photography,
+.client-testimonials,
+.banner,
+.footer {
   grid-column: 1 / -1;
 }
 
@@ -290,4 +290,60 @@ h3 {
   font-size: 13px;
   font-weight: 600;
   color: var(--Grayish-blue) 
+}
+
+/* ==== BANNER ===== */
+
+.grid-images {
+  display: grid;
+  grid-template-columns: minmax(100px, 50%) minmax(100px, 50%);
+  grid-template-rows: minmax(1fr,200px) minmax(1fr,200px);
+}
+
+.milk {
+  grid-column:1;
+  grid-row: 1;
+}
+.orange {
+  grid-column: 2;
+  grid-row: 1;
+}
+.cone {
+  grid-column: 1;
+  grid-row: 2;
+}
+.sugarCubes {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* ==== FOOTER ==== */
+
+.footer {
+  background-color: #94d3c4;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6em;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-enlaces {
+  color: var(--Dark-moderate-cyan);
+  font-weight: 900;
+}
+
+.footer-socials {
+  margin-bottom: 2em;
+}
+
+.icon-footer {
+  margin-right: 1.3em;
 }
